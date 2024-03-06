@@ -80,3 +80,6 @@ export class HeroAppComponent {
 }
 
 Dependency Injection -- mechanism for creating and delivering some parts of an application to other parts of an application that require them
+
+react -- one way binding, virtual DOM, Typescript
+angular -- two way binding, Real DOM, Javascript
