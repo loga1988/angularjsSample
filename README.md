@@ -83,3 +83,16 @@ Dependency Injection -- mechanism for creating and delivering some parts of an a
 
 react -- one way binding, virtual DOM, Typescript
 angular -- two way binding, Real DOM, Javascript
+
+virtual DOM -- memory representation of Real DOM
+
+REACT interview questions 
+
+State -- contain data or information about the component  
+
+class component -- this maintains their state 
+functional component -- stateless doesn't maintain its state 
+
+render --> renders the html for a component
+
+props --> to pass data between the components 
