@@ -95,4 +95,5 @@ functional component -- stateless doesn't maintain its state
 
 render --> renders the html for a component
 
+CORS -- Cross-Origin resource sharing policy is a mechanism for integrating application 
 props --> to pass data between the components 
