@@ -93,7 +93,16 @@ State -- contain data or information about the component
 class component -- this maintains their state 
 functional component -- stateless doesn't maintain its state 
 
+If we make standalone as true then it will not create the module file
+standalone -- reducing the need for NGModules
+
 render --> renders the html for a component
 
 CORS -- Cross-Origin resource sharing policy is a mechanism for integrating application 
 props --> to pass data between the components 
+
+1) Angular update
+   Node version
+   Typescript version
+   in tsconfig.json remove enableIvy. After v15, Ivy is the only rendering engine
+   Update instances of TestBed.inject() that use an InjectFlags parameter to use an InjectOptions parameter. The InjectFlags parameter of TestBed.inject() is deprecated in v15
