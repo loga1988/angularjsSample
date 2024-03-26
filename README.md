@@ -88,6 +88,8 @@ virtual DOM -- memory representation of Real DOM
 
 REACT interview questions 
 
+one-way binding - changes in the data automatically update the UI, but changes in the UI do not automatically update the data
+
 State -- contain data or information about the component  
 
 class component -- this maintains their state 
@@ -106,3 +108,81 @@ props --> to pass data between the components
    Typescript version
    in tsconfig.json remove enableIvy. After v15, Ivy is the only rendering engine
    Update instances of TestBed.inject() that use an InjectFlags parameter to use an InjectOptions parameter. The InjectFlags parameter of TestBed.inject() is deprecated in v15
+
+
+PS C:\Users\logbaran\workspace\sample-angular-app> ng new my-new-App
+? Which stylesheet format would you like to use? SCSS   [ https://sass-lang.com/documentation/syntax#scss                ]
+? Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? Yes
+CREATE my-new-App/angular.json (3038 bytes)
+CREATE my-new-App/package.json (1275 bytes)
+CREATE my-new-App/README.md (1089 bytes)
+CREATE my-new-App/tsconfig.json (936 bytes) -- configuration of the TypeScript compiler important parameters target,module 
+CREATE my-new-App/.editorconfig (290 bytes)
+CREATE my-new-App/.gitignore (590 bytes)
+CREATE my-new-App/tsconfig.app.json (342 bytes)
+CREATE my-new-App/tsconfig.spec.json (287 bytes)
+CREATE my-new-App/server.ts (1759 bytes)
+CREATE my-new-App/.vscode/extensions.json (134 bytes)
+CREATE my-new-App/.vscode/launch.json (490 bytes)
+CREATE my-new-App/.vscode/tasks.json (980 bytes)
+CREATE my-new-App/src/main.ts (256 bytes)
+CREATE my-new-App/src/favicon.ico (15086 bytes)
+CREATE my-new-App/src/index.html (307 bytes)
+CREATE my-new-App/src/styles.scss (81 bytes)
+CREATE my-new-App/src/main.server.ts (271 bytes)
+CREATE my-new-App/src/app/app.component.html (20239 bytes)
+CREATE my-new-App/src/app/app.component.spec.ts (957 bytes)
+CREATE my-new-App/src/app/app.component.ts (320 bytes)
+CREATE my-new-App/src/app/app.component.scss (0 bytes)
+CREATE my-new-App/src/app/app.config.ts (330 bytes)
+CREATE my-new-App/src/app/app.routes.ts (80 bytes)
+CREATE my-new-App/src/app/app.config.server.ts (361 bytes)
+CREATE my-new-App/src/assets/.gitkeep (0 bytes)
+√ Packages installed successfully.
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+Successfully initialized git.
+
+
+PS C:\Users\logbaran\workspace\sample-angular-app> ng new my-new-App-2 --standalone=false
+? Which stylesheet format would you like to use? SCSS   [ https://sass-lang.com/documentation/syntax#scss                ]
+? Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? Yes
+CREATE my-new-App-2/angular.json (3249 bytes)
+CREATE my-new-App-2/package.json (1281 bytes)
+CREATE my-new-App-2/README.md (1090 bytes)
+CREATE my-new-App-2/tsconfig.json (936 bytes)
+CREATE my-new-App-2/.editorconfig (290 bytes)
+CREATE my-new-App-2/.gitignore (590 bytes)
+CREATE my-new-App-2/tsconfig.app.json (342 bytes)
+CREATE my-new-App-2/tsconfig.spec.json (287 bytes)
+CREATE my-new-App-2/server.ts (1782 bytes)
+CREATE my-new-App-2/.vscode/extensions.json (134 bytes)
+CREATE my-new-App-2/.vscode/launch.json (490 bytes)
+CREATE my-new-App-2/.vscode/tasks.json (980 bytes)
+CREATE my-new-App-2/src/main.ts (221 bytes)
+CREATE my-new-App-2/src/favicon.ico (15086 bytes)
+CREATE my-new-App-2/src/index.html (308 bytes)
+CREATE my-new-App-2/src/styles.scss (81 bytes)
+CREATE my-new-App-2/src/main.server.ts (71 bytes)
+CREATE my-new-App-2/src/app/app-routing.module.ts (255 bytes)
+CREATE my-new-App-2/src/app/app.module.ts (467 bytes)
+CREATE my-new-App-2/src/app/app.component.html (20239 bytes)
+CREATE my-new-App-2/src/app/app.component.spec.ts (1106 bytes)
+CREATE my-new-App-2/src/app/app.component.ts (224 bytes)
+CREATE my-new-App-2/src/app/app.component.scss (0 bytes)
+CREATE my-new-App-2/src/app/app.module.server.ts (332 bytes)
+CREATE my-new-App-2/src/assets/.gitkeep (0 bytes)
+√ Packages installed successfully.
+warning: in the working copy of 'package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/app.module.ts', LF will be replaced by CRLF the next time Git touches it
+Successfully initialized git.
+
+The TestBed is the most important of the Angular testing utilities. The TestBed creates a dynamically-constructed Angular test module that emulates an Angular @NgModule.
+
+The TestBed.configureTestingModule() method takes a metadata object that can have most of the properties of an @NgModule.
+
+To test a service, you set the providers metadata property with an array of the services that you'll test or mock.
+
+TestBed.configureTestingModule({ providers: [ValueService] }); -- provide the service objects 
+service = TestBed.inject(ValueService); -- mocking service object
