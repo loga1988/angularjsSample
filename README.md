@@ -84,9 +84,12 @@ Dependency Injection -- mechanism for creating and delivering some parts of an a
 react -- one way binding, virtual DOM, Typescript
 angular -- two way binding, Real DOM, Javascript
 
-virtual DOM -- memory representation of Real DOM
-
 REACT interview questions 
+
+JSX -- We can write HTML in javascript 
+For a web browser to process JSX it needs to convert it into javascript object this will be done Babel bundle 
+virtual DOM -- lightweight representation of the real DOM in the memory, and that is known as the virtual DOM. When the state of an object changes, the virtual DOM changes only that object in the real DOM, rather than updating all the objects
+
 
 one-way binding - changes in the data automatically update the UI, but changes in the UI do not automatically update the data
 
