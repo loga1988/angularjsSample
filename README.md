@@ -189,3 +189,32 @@ To test a service, you set the providers metadata property with an array of the 
 
 TestBed.configureTestingModule({ providers: [ValueService] }); -- provide the service objects 
 service = TestBed.inject(ValueService); -- mocking service object
+
+**REACT**
+
+Virtual DOM and how it works -- in-memory representation of real DOM when state or props change occurs react updates the virtual DOM and then diffing algorithm runs to compare the real and virtual DOM and updates only the changes parts of actual DOM
+
+class components lifecycle hooks -- componentDidMount, compomonentDidUpdate, ComponentWillUnmount
+functional components lifecycle hooks -- useEffect which combinely does mount, update and unmount
+
+useState vs useReducer
+useState -- local component state
+useReducer -- complex state logic where state depends on multiple actions
+
+how do we handle global state in react application -- context API, Redux . Both are  managing and sharing state across components
+
+how do we connect with backend API in react 
+const fetchData = async () => {
+  const response = await axios.get('/api/data');
+  return response.data;
+};
+
+What are some common patterns for handling authentication and authorization in React applications?
+
+Answer:
+
+Context API or State Management Libraries: Store authentication state and user information globally.
+Protected Routes: Use higher-order components or custom hooks to protect routes and redirect unauthorized users.
+Token Management: Store tokens securely, such as in HTTP-only cookies or secure storage, and include them in API requests.
+
+
